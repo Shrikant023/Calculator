@@ -3,13 +3,13 @@ function changeQuantity(id, value) {
     let inputField = document.getElementById(id);
     let currentValue = parseInt(inputField.value) || 0;
 
-    // Ensure that values don't go below 0
+    // Update the value based on the button clicked (+ or -)
     let newValue = currentValue + value;
-    if (newValue < 0) {
-        newValue = 0;
-    }
 
+    // Remove the restriction that prevents going below zero
     inputField.value = newValue;
+
+    // Recalculate the total after every change
     calculateTotal();
 }
 
@@ -31,4 +31,3 @@ function calculateTotal() {
     // Update the total amount displayed on the page
     document.getElementById('totalAmount').innerHTML = total;
 }
-
