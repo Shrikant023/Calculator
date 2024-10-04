@@ -30,6 +30,14 @@
             </div>
         </div>
         <div class="product">
+            <label>INR 500: </label>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('qty500', -1)">-</button>
+                <input type="number" id="qty500" value="0" readonly> <!-- corrected here -->
+                <button onclick="changeQuantity('qty500', 1)">+</button>
+            </div>
+        </div>
+        <div class="product">
             <label>INR 700: </label>
             <div class="quantity-controls">
                 <button onclick="changeQuantity('qty700', -1)">-</button>
@@ -43,6 +51,14 @@
                 <button onclick="changeQuantity('qty900', -1)">-</button>
                 <input type="number" id="qty900" value="0" readonly>
                 <button onclick="changeQuantity('qty900', 1)">+</button>
+            </div>
+        </div>
+        <div class="product">
+            <label>INR 1000: </label>
+            <div class="quantity-controls">
+                <button onclick="changeQuantity('qty1000', -1)">-</button>
+                <input type="number" id="qty1000" value="0" readonly>
+                <button onclick="changeQuantity('qty1000', 1)">+</button>
             </div>
         </div>
         <div class="product">
@@ -72,7 +88,6 @@
 
         <!-- Display the total -->
         <h2>Total: <span id="totalAmount">0</span></h2>
-
     </div>
 
     <!-- Script to handle the calculation and button logic -->
