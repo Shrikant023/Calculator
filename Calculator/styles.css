@@ -1,0 +1,108 @@
+/* Container styling */
+/* Container styling with neon border */
+.container {
+    max-width: 400px;
+    margin: 20px auto;
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+
+    /* Neon border effect */
+    border: 2px solid #00FFFF;
+    /* Neon cyan color for the border */
+    box-shadow: 0 0 15px #00FFFF,
+        /* Neon glow */
+        0 0 30px #00FFFF,
+        0 0 60px #00FFFF,
+        0 0 100px #00FFFF;
+}
+
+#totalAmount {
+    color: #28a745;
+    /* Green color for positive (profit-like) look */
+    font-weight: bold;
+    font-size: 2rem;
+    /* Increase the font size */
+    text-shadow: 0 0 5px rgba(0, 255, 0, 0.5);
+    /* Optional neon green shadow */
+}
+
+/* Styling for the product rows */
+.product {
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+/* Quantity controls: buttons and input horizontally aligned */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* Aligns the buttons and input at the center */
+}
+
+/* Input field styling: Smaller and horizontally aligned */
+input[type="number"] {
+    width: 50px;
+    /* Slightly larger for better readability */
+    padding: 3px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    margin: 0 5px;
+    /* Ensure spacing between buttons and input */
+}
+
+/* Button styling for increment and decrement buttons */
+button {
+    padding: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        max-width: 90%;
+    }
+
+    .product {
+        justify-content: space-between;
+    }
+
+    input[type="number"] {
+        width: 35px;
+        /* Reduce input field width further for mobile */
+        font-size: 12px;
+    }
+
+    button {
+        width: 30px;
+        height: 30px;
+        font-size: 14px;
+    }
+
+    /* Style for total amount in green */
+
+
+
+}
