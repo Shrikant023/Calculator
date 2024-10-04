@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>Shop Sales Calculator</h1>
+
+        <!-- Product list with prices and quantity input fields -->
+        <div class="product">
+            <label>INR 100: </label>
+            <input type="number" id="qty100" value="0" oninput="calculateTotal()">
+        </div>
+        <div class="product">
+            <label>INR 500: </label>
+            <input type="number" id="qty400" value="0" oninput="calculateTotal()">
+        </div>
+        <div class="product">
+            <label>INR 700: </label>
+            <input type="number" id="qty900" value="0" oninput="calculateTotal()">
+        </div>
+        <div class="product">
+            <label>INR 1000: </label>
+            <input type="number" id="qty1300" value="0" oninput="calculateTotal()">
+        </div>
+        <div class="product">
+            <label>INR 1300: </label>
+            <input type="number" id="qty700" value="0" oninput="calculateTotal()">
+        </div>
+        <div class="product">
+            <label>INR 10000: </label>
+            <input type="number" id="qty10000" value="0" oninput="calculateTotal()">
+        </div>
+
+         <div class="product">
+            <label>INR 15000: </label>
+            <input type="number" id="qty15000" value="0" oninput="calculateTotal()">
+         </div>
+
+        <!-- Display the total -->
+        <h2>Total: INR <span id="totalAmount">0</span></h2>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+
+</html>
