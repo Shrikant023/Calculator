@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop Sales Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- ProfitPulse heading above the containers -->
+    <h1 class="main-heading">ProfitPulse</h1>
+
+    <div class="main-container">
+        <!-- Left container with half the values -->
+        <div class="container">
+            <div class="product">
+                <label>INR 100: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty100', -1)">-</button>
+                    <input type="number" id="qty100" value="0" readonly>
+                    <button onclick="changeQuantity('qty100', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 200: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty200', -1)">-</button>
+                    <input type="number" id="qty200" value="0" readonly>
+                    <button onclick="changeQuantity('qty200', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 300: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty300', -1)">-</button>
+                    <input type="number" id="qty300" value="0" readonly>
+                    <button onclick="changeQuantity('qty300', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 400: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty400', -1)">-</button>
+                    <input type="number" id="qty400" value="0" readonly>
+                    <button onclick="changeQuantity('qty400', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 500: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty500', -1)">-</button>
+                    <input type="number" id="qty500" value="0" readonly>
+                    <button onclick="changeQuantity('qty500', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 700: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty700', -1)">-</button>
+                    <input type="number" id="qty700" value="0" readonly>
+                    <button onclick="changeQuantity('qty700', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 800: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty800', -1)">-</button>
+                    <input type="number" id="qty800" value="0" readonly>
+                    <button onclick="changeQuantity('qty800', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 900: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty900', -1)">-</button>
+                    <input type="number" id="qty900" value="0" readonly>
+                    <button onclick="changeQuantity('qty900', 1)">+</button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right container with the remaining values -->
+        <div class="container">
+            <div class="product">
+                <label>INR 1000: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty1000', -1)">-</button>
+                    <input type="number" id="qty1000" value="0" readonly>
+                    <button onclick="changeQuantity('qty1000', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 1200: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty1200', -1)">-</button>
+                    <input type="number" id="qty1200" value="0" readonly>
+                    <button onclick="changeQuantity('qty1200', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 1300: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty1300', -1)">-</button>
+                    <input type="number" id="qty1300" value="0" readonly>
+                    <button onclick="changeQuantity('qty1300', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 1500: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty1500', -1)">-</button>
+                    <input type="number" id="qty1500" value="0" readonly>
+                    <button onclick="changeQuantity('qty1500', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 2000: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty2000', -1)">-</button>
+                    <input type="number" id="qty2000" value="0" readonly>
+                    <button onclick="changeQuantity('qty2000', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 3000: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty3000', -1)">-</button>
+                    <input type="number" id="qty3000" value="0" readonly>
+                    <button onclick="changeQuantity('qty3000', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 5000: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty5000', -1)">-</button>
+                    <input type="number" id="qty5000" value="0" readonly>
+                    <button onclick="changeQuantity('qty5000', 1)">+</button>
+                </div>
+            </div>
+            <div class="product">
+                <label>INR 500000: </label>
+                <div class="quantity-controls">
+                    <button onclick="changeQuantity('qty500000', -1)">-</button>
+                    <input type="number" id="qty500000" value="0" readonly>
+                    <button onclick="changeQuantity('qty500000', 1)">+</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Display the total below both containers -->
+    <h2 class="total-profit">Total: INR <span id="totalAmount">0</span></h2>
+
+    <!-- Script to handle the calculation and button logic -->
+    <script src="scripts.js"></script>
+</body>
+
+</html>

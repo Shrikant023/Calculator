@@ -1,0 +1,83 @@
+/* Centering the main heading */
+.main-heading {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+/* Main container to hold both columns */
+.main-container {
+    display: flex;
+    justify-content: space-between;
+    /* Align containers side by side */
+    max-width: 800px;
+    /* Maximum width for both containers */
+    margin: 0 auto;
+    /* Center the containers */
+}
+
+/* Container styling */
+.container {
+    width: 45%;
+    /* Make each container take up 45% of the available width */
+    padding: 15px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 255, 255, 0.6);
+    /* Keep the neon border effect */
+}
+
+/* Styling for the product rows */
+.product {
+    margin-bottom: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Quantity controls: buttons and input horizontally aligned */
+.quantity-controls {
+    display: flex;
+    align-items: center;
+}
+
+/* Input field styling */
+input[type="number"] {
+    width: 35px;
+    /* Reduce the input field width */
+    padding: 3px;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+    /* Reduce font size */
+    margin: 0 5px;
+}
+
+/* Button styling for increment and decrement buttons */
+button {
+    padding: 5px;
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 14px;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+/* Total profit styling below containers */
+.total-profit {
+    text-align: center;
+    font-size: 1.8rem;
+    margin-top: 20px;
+    color: #28a745;
+    /* Green color for profit */
+    font-weight: bold;
+}
