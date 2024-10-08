@@ -39,7 +39,7 @@ function calculateTotal() {
     let qty9000 = parseInt(document.getElementById('qty9000').value) || 0;
     let qty10000 = parseInt(document.getElementById('qty10000').value) || 0;
     let qty15000 = parseInt(document.getElementById('qty15000').value) || 0;
-    let qty500000 = parseInt(document.getElementById('qty500000').value) || 0;
+    let qty50000 = parseInt(document.getElementById('qty50000').value) || 0;
 
     // Multiply quantities by their respective prices and calculate the total
     let total = (qty100 * 100) + (qty200 * 200) + (qty300 * 300) +
@@ -48,7 +48,7 @@ function calculateTotal() {
         (qty1200 * 1200) + (qty1300 * 1300) + (qty1500 * 1500) +
         (qty2000 * 2000) + (qty3000 * 3000) + (qty5000 * 5000) +
         (qty7000 * 7000) + (qty9000 * 9000) + (qty10000 * 10000) +
-        (qty15000 * 15000) + (qty500000 * 500000);
+        (qty15000 * 15000) + (qty50000 * 50000);
 
     // Update the total amount displayed on the page
     document.getElementById('totalAmount').innerHTML = total;
