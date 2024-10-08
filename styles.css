@@ -1,16 +1,69 @@
+/* General styling */
+body {
+    background-color: #f4f4f4;
+    color: #333;
+    transition: background-color 0.3s, color 0.3s;
+    /* Smooth transition between modes */
+}
+
+.dark-mode {
+    background-color: #1e1e1e;
+    color: #f4f4f4;
+}
+
+.container {
+    background-color: #fff;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    /* Transition for smooth mode change */
+}
+
+.dark-mode .container {
+    background-color: #333;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    /* Adjust shadow for dark mode */
+}
+
+button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.dark-mode button {
+    background-color: #444;
+}
+
+.dark-mode button:hover {
+    background-color: #666;
+}
+
+/* Dark mode for total */
+.dark-mode .total-profit {
+    color: #28a745;
+}
 /* Centering the main heading */
 .main-heading {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 20px;
     color: #333;
+    cursor: pointer;
+        /* Indicates that the heading is clickable */
+    }
+    
+    .dark-mode .main-heading {
+        color: #f4f4f4;
 }
 
 /* Main container to hold both columns */
 .main-container {
     display: flex;
     justify-content: space-between;
-    /* Align containers side by side */
     max-width: 800px;
     /* Maximum width for both containers */
     margin: 0 auto;
@@ -20,12 +73,11 @@
 /* Container styling */
 .container {
     width: 45%;
-    /* Make each container take up 45% of the available width */
     padding: 15px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 4px 12px rgba(0, 255, 255, 0.6);
-    /* Keep the neon border effect */
+    /* Neon border effect */
 }
 
 /* Styling for the product rows */
@@ -55,21 +107,15 @@ input[type="number"] {
     margin: 0 5px;
 }
 
-/* Button styling for increment and decrement buttons */
+/* Button styling */
 button {
     padding: 5px;
-    background-color: #007BFF;
-    color: white;
-    border: none;
+    width: 30px;
+        height: 30px;
     border-radius: 5px;
     font-size: 14px;
     cursor: pointer;
-    width: 30px;
-    height: 30px;
-}
-
-button:hover {
-    background-color: #0056b3;
+    text-align: center;
 }
 
 /* Total profit styling below containers */
